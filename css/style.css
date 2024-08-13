@@ -402,22 +402,22 @@ img {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    justify-content: flex-start;
 }
 .social-text {
-    width: 96px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #fff;
     margin-bottom: 16px;
-    align-content: flex-start;
+    flex-direction: row;
 }
-.footer-link-item {
+.footer-link-icone {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     flex-shrink: 0;
     gap: 16px;
 }
