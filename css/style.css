@@ -308,8 +308,8 @@ img {
 }
 .link:hover,
 .link:focus {
-        background-color: #31D0AA;  
-}
+    background-color:#4D5AE5;
+ }
 .social-link-icon {
     fill: #F4F4FD;
 }
@@ -441,6 +441,20 @@ img {
     justify-content: center;
     flex-shrink: 0;
     gap: 16px;
+}
+.footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #404bbf;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-link:hover,
+.footer-link:focus {
+    background-color: #31D0AA;
 }
 .footer-link-list {
     flex-direction: row;
