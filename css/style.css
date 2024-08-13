@@ -122,6 +122,9 @@ img {
      rgba(46, 47, 66, 0.7), 
      rgba(46, 47, 66, 0.7)), 
      url(../images/people-bg.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
     padding: 188px 0;
 }
 .hero-title  {
@@ -182,7 +185,17 @@ img {
 }
 .feature-item {
     width: calc((100% - 3*24px)/4 );
-
+}
+.feature-item-border {
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background-color: #f4f4fd;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .feature-title {
     margin-bottom: 8px;
@@ -212,10 +225,12 @@ img {
     border-radius: 0 0 4px 4px;
     width: calc((100% - 3*24px)/4);
     background: #fff;
+    margin-bottom: 32px;
 }
 .team-box {
     padding: 32px 0;
     text-align: center;
+    margin-top: 32px;
 }
 .team-title {
     margin-bottom: 72px;
@@ -245,6 +260,46 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    padding-bottom: 8px;
+}
+.social-link-box {
+    
+}
+.team-list-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    gap: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 32px;
+}
+.social-link-list {
+    flex-direction: row;
+    align-items: center;
+    width: 232px;
+    height: 40px;
+    width: calc(( 100% - 3*24px)/4);
+   
+
+}
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    
+}
+.link:hover,
+.link:focus {
+    background-color: #31D0AA;
+}
+.social-link-icon {
+    fill: #F4F4FD;
 }
 
 /* #endregion main team section 2 */
@@ -271,6 +326,9 @@ img {
 .portfolio-item {
     width: calc((100% - 24px*2)/3);
 }
+.portfolio-item:hover .portfolio-cover-text {
+    transform: translate(0);
+}
 .portfolio-box {
     padding: 32px 16px;
     border-bottom: 1px solid #e7e9fc;
@@ -292,6 +350,27 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+}
+.portfolio-cover-wrap {
+    position: relative;
+    overflow: hidden;
+}
+.portfolio-cover-text {
+    position: absolute;
+    top: 0;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    background-color: #4d5ae5;
+    height: 100%;
+    left: 0;
+    padding-left: 32px;
+    padding-top: 40px;
+    padding-right: 32px;
+    padding-bottom: 164px;
+    transform: translateY(100%);
+    transition: transform 250ms linear;
+
 }
 /* #endregion main portfolio section 3 */
 
@@ -316,5 +395,37 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+}
+.footer-link-conteiner {
+    margin-right: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.social-text {
+    width: 96px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 16px;
+    align-content: flex-start;
+}
+.footer-link-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    gap: 16px;
+}
+.footer-link-list {
+    flex-direction: row;
+    align-items: center;
+    width: 208px;
+    height: 40px;
+    width: calc((100% - 3*16px)/4);
 }
 /* #endregion footer */
